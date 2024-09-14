@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest</title>
+
+    <link href="https://s.pinimg.com/webapp/favicon_48x48-7470a30d.png" rel="icon">
+
+    <link rel="canonical" href="https://es.pinterest.com/">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Blinker' rel='stylesheet'>
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="topnav" id="myTopnav">
+            <ul>
+                <li class="li_nav">
+                    <img src="https://s.pinimg.com/webapp/favicon_48x48-7470a30d.png" alt="Logo Pinterest" style="width: 30px; height: auto;">
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button" style="background-color: black; color: white;">Inicio</a>
+                </li>
+                <li class="li_nav"> 
+                    <a href="#" class="button_1" type="button" style="color: black;">Explorar</a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button" style="color: black;">Crear</a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button" style="color: rgb(77, 67, 67); background-color: rgb(241, 238, 238); width: 70%; text-align: start;"><i class="fa fa-search"></i><span style="margin-left: 10px;">Buscar</span></a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button"><i class="fa fa-bell" style="color: rgb(77, 67, 67);"></i></a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button"><i class="fa fa-comment" style="color: rgb(77, 67, 67);"></i></a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="btn_circle" type="button" style="color: rgb(77, 67, 67); background-color: rgb(241, 238, 238);">D</a>
+                </li>
+                <li class="li_nav">
+                    <a href="#" class="button_1" type="button"><i class="fa fa-angle-down" style="color: rgb(77, 67, 67);"></i></a>
+                </li>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars" style="color: rgb(77, 67, 67);"></i>
+                </a> 
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="columns">
+            <section class="section_img" id="star_wars">
+                <ul>
+                    <li>
+                        <img src="/images/star_wars/milenario.jpg" alt="star_wars - milenario" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/star_wars/storm.jpg" alt="star_wars - storm" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/star_wars/logo.jpg" alt="star_wars - logo" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+            <section class="section_img" id="the_last_of_us">
+                <ul>
+                    <li>
+                        <img src="/images/the_last_of_us/ellie_1.jpg" alt="the_last_of_us - ellie_1" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/the_last_of_us/mano.jpg" alt="the_last_of_us - mano" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/the_last_of_us/luciernaga.jpg" alt="star_wars - luciernaga" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+            <section class="section_img" id="animales">
+                <ul>
+                    <li>
+                        <img src="/images/animales/leon.jpg" alt="animales - leon" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/animales/leopardo.jpg" alt="animales - leon" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/animales/zorro.jpg" alt="animales - zorro" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+            <section class="section_img" id="minimalist">
+                <ul>
+                    <li>
+                        <img src="/images/minimalist/amanecer.jpg" alt="minimalist - amanecer" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/minimalist/monta.jpg" alt="minimalist - monta" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/minimalist/night.jpg" alt="minimalist - night" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+            <section class="section_img" id="breaking_bad">
+                <ul>
+                    <li>
+                        <img src="/images/breaking_bad/caravana.jpg" alt="breaking_bad - caravana" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/breaking_bad/inicio.jpg" alt="breaking_bad - inicio" loading="lazy">
+                    </li>
+                    <li>
+                        <img src="/images/breaking_bad/heisenberg.jpg" alt="star_wars - heisenberg" loading="lazy">
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+            x.className += " responsive";
+          } else {
+            x.className = "topnav";
+          }
+        }
+    </script>
+</body>
+<footer>
+    © 2024 Pinterest - hecho por Dani. Todos los derechos reservados 
+</footer>
+</html>
